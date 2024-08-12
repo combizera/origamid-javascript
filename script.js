@@ -1,46 +1,44 @@
-// Crie um objeto com os seus dados pessoais
-// Deve possui pelo menos duas propriedades nome e sobrenome
+var fullName = 'ygor';
 
-const person = {
-  name: 'ygor',
-  age: 25, 
-  haveHouse: false
-}
+let $btn = document.querySelector('.btn');
 
-console.log(person);
+$btn.classList.add('ativo');
 
-// Crie um método no objeto anterior, que mostre o seu nome completo
-person.showInfos = function(){
-  return (`Nome: ${person.name}. Idade: ${person.age}. Casa: ${person.haveHouse}`)
-} 
+console.log($btn)
 
-console.log(person.showInfos())
+// nomeie 3 propriedades ou métodos de strings
+// Para deixar a string em maisculo
+const maisculo = fullName.toUpperCase();
+console.log(maisculo);
 
-// Modifique o valor da propriedade preco para 3000
-var carro = {
-  preco: 1000,
-  portas: 4,
-  marca: 'Audi',
-}
+// Para concatenar algo
+const concat = fullName.concat('.');
+console.log(concat);
 
-carro.preco = 3000;
+// valida qual o caracter final da string
+const finish = fullName.endsWith('a');
+console.log(finish)
 
-console.log(carro.preco);
+// nomeie 5 propriedades ou métodos de elementos do DOM
+// mostra o cookie da sessao
+let $html = document.cookie;
+console.log($html)
 
-// Crie um objeto de um cachorro que represente um labrador,
-// preto com 10 anos, que late ao ver um homem
-const dog = {
-  raca: 'Labrador',
-  color: 'preto',
-  age: 10,
-  late: function(vendo){
-    if (vendo === 'homem') {
-      return 'Au au';
-    }
-    return 'Não late (=';
-  }
-}
+// pega o primeiro seletor que respeita as regras pedidas
+$html = document.querySelector('.btn');
+console.log($html)
 
-console.log(dog);
-console.log(dog.late('homem'));
+// pega todos seletores que respeitarem as regras pedidas
+$html = document.querySelectorAll('.btn');
+console.log($html)
 
+// mostra o tipo de conteudo que temos na página
+$html = document.contentType;
+console.log($html)
+
+// mostra o tipo de documento que temos
+$html = document.doctype;
+console.log($html)
+
+// busque na web um objeto (método) capaz de interagir com o clipboard, 
+// clipboard é a parte do seu computador que lida com o CTRL + C e CTRL + V

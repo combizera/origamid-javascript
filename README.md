@@ -23,3 +23,7 @@ Variáveis e funções definidas dentro de um bloco `{}`, não são visíveis fo
 ## Objetos
 
 Conjunto de variáveis e funções, que são chamadas de propriedades e métodos.
+
+### Tudo é Objeto
+
+Strings, Números, Booleanos, Objetos e mais, possuem propriedades e métodos. Por isso são objetos.
