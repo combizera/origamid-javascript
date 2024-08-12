@@ -14,3 +14,7 @@ Ao `executar` uma função, você pode definir os `argumento`.
 ### Escopo
 
 Variáveis e funções definidas dentro de um bloco `{}`, não são visíveis fora dele.
+
+## Objetos
+
+Conjunto de variáveis e funções, que são chamadas de propriedades e métodos.
