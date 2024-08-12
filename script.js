@@ -1,7 +1,12 @@
-function imc(peso, altura) // parâmetros
-{
-  var imc = peso / (altura * altura);
-  return imc;
+function velhice(idade) {
+  if (typeof idade !== 'number'){
+    return 'Por favor, informe um número';
+  }
+  else if (idade >= 60){
+    return 'Você é idoso';
+  } else {
+    return 'Ainda não é idoso';
+  }
 }
 
-console.log(imc(80, 1.73)) // argumentos
+console.log(velhice('oi'))
