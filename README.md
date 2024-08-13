@@ -47,8 +47,20 @@ O loop irá parar caso encontro e palavra `break`.
 forEach é um método que executa uma função para cada item da Array. É uma forma mais simples de utilizarmos um loop com arrays (ou array-like)
 
 ```js
-const frutas = ["Banana", "Maça", "Pera", "Uva"];
-frutas.forEach(function (fruta, index) {
-  console.log(index, fruta);
+const fruits = ["Banana", "Apple", "Stranberry", "Pineapple"];
+fruits.forEach(function (fruit, index) {
+  console.log(index, fruit);
 });
+```
+
+## Ternário
+
+Abreviação de condicionais com `if` e `else`
+
+```js
+const age = 19;
+const canDrink = idade >= 18 ? "Can drink" : "Cannot Drink";
+console.log(canDrink); // Can drink
+
+// condition ? true : false
 ```
