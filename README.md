@@ -27,3 +27,13 @@ Conjunto de variáveis e funções, que são chamadas de propriedades e métodos
 ### Tudo é Objeto
 
 Strings, Números, Booleanos, Objetos e mais, possuem propriedades e métodos. Por isso são objetos.
+
+## Array e Loops
+
+### Array
+
+Um grupo de valores geralmente relacionados. Servem para guardarmos diferente valores em uma única variável.
+
+### Loops
+
+Fazem algo repetidamente até que uma condição seja atingida
