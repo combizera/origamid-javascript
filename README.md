@@ -37,3 +37,18 @@ Um grupo de valores geralmente relacionados. Servem para guardarmos diferente va
 ### Loops
 
 Fazem algo repetidamente até que uma condição seja atingida
+
+#### Break
+
+O loop irá parar caso encontro e palavra `break`.
+
+#### forEach
+
+forEach é um método que executa uma função para cada item da Array. É uma forma mais simples de utilizarmos um loop com arrays (ou array-like)
+
+```js
+const frutas = ["Banana", "Maça", "Pera", "Uva"];
+frutas.forEach(function (fruta, index) {
+  console.log(index, fruta);
+});
+```
