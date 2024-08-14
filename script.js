@@ -1,23 +1,25 @@
 // Retorne no console todas as imagens do site
-const img = document.querySelectorAll('img');
-console.log(img);
+const $imgs = document.querySelectorAll('img');
+console.log($imgs);
 
 // Retorne no console apenas as imagens que começaram com a palavra imagem
-const imagensAnimais = document.querySelectorAll('img[src^="img/imagem"]');
-console.log(imagensAnimais);
+const $imgsText = document.querySelectorAll('[src^="img/imagem"]')
+console.log($imgsText);
 
 // Selecione todos os links internos (onde o href começa com #)
-const linksInterno = document.querySelectorAll('[href^="#"]');
-console.log(linksInterno);
+const $links = document.querySelectorAll('[href^="#"]')
+console.log($links);
 
 // Selecione o primeiro h2 dentro de .animais-descricao
-const animais = document.querySelector('.animais-descricao');
-const h2Animais = animais.querySelector('h2');
-
-console.log(animais);
-console.log(h2Animais);
+const $h2 = document.querySelector('.animais-descricao h2')
+console.log($h2.innerText);
+console.log('===');
 
 // Selecione o último p do site
-const paragrafos = document.querySelectorAll('p');
+const $lastP = document.querySelectorAll('p');
+$lastP.forEach(function(item, index){
+  if($lastP.length - 1 === index){
+    console.log(item.innerText)
+  }
+})
 
-console.log(paragrafos[--paragrafos.length]);
