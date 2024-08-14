@@ -70,3 +70,7 @@ console.log(canDrink); // Can drink
 Document Object Model
 
 É uma interface que representa documentos HTML e XML através de objetos. Com ela é possível manipular a estrutura, estilo e conteúdo destes documentos.
+
+### Node
+
+Toda tag html é representada pelo objeto `Element` e por isso herda os seus métodos e propriedades. Element é um tipo de objeto Node.
