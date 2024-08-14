@@ -64,3 +64,9 @@ console.log(canDrink); // Can drink
 
 // condition ? true : false
 ```
+
+## DOM
+
+Document Object Model
+
+É uma interface que representa documentos HTML e XML através de objetos. Com ela é possível manipular a estrutura, estilo e conteúdo destes documentos.
