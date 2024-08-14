@@ -1,28 +1,23 @@
-const $h1 = document.querySelector('h1')
-console.log($h1)
-console.log($h1.classList)
+// Retorne no console todas as imagens do site
+const img = document.querySelectorAll('img');
+console.log(img);
 
-$h1.addEventListener('click', function(){
-  console.log(`Clicou em ${$h1.innerText}`)
-});
-console.log('===')
+// Retorne no console apenas as imagens que começaram com a palavra imagem
+const imagensAnimais = document.querySelectorAll('img[src^="img/imagem"]');
+console.log(imagensAnimais);
 
-// Retorne o url da página atual utilizando o objeto window
-const url = window.location.href;
-console.log(url);
-console.log('===');
+// Selecione todos os links internos (onde o href começa com #)
+const linksInterno = document.querySelectorAll('[href^="#"]');
+console.log(linksInterno);
 
-// Seleciona o primeiro elemento da página que
-// possua a classe ativo
-const $classActive = document.querySelector('.active');
-console.log($classActive);
-console.log('===');
+// Selecione o primeiro h2 dentro de .animais-descricao
+const animais = document.querySelector('.animais-descricao');
+const h2Animais = animais.querySelector('h2');
 
-// Retorne a linguagem do navegador
-const browserLang = window.navigator.language;
-console.log(browserLang);
-console.log('===');
+console.log(animais);
+console.log(h2Animais);
 
-// Retorne a largura da janela 
-const windowWidth = window.innerWidth;
-console.log(windowWidth);
+// Selecione o último p do site
+const paragrafos = document.querySelectorAll('p');
+
+console.log(paragrafos[--paragrafos.length]);
