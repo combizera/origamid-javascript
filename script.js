@@ -2,24 +2,37 @@
 const $imgs = document.querySelectorAll('img');
 console.log($imgs);
 
-// Retorne no console apenas as imagens que começaram com a palavra imagem
-const $imgsText = document.querySelectorAll('[src^="img/imagem"]')
-console.log($imgsText);
+$imgs.forEach(function(item, index, array){
+  console.log(index, item);
+  console.log(array);
+});
 
-// Selecione todos os links internos (onde o href começa com #)
-const $links = document.querySelectorAll('[href^="#"]')
-console.log($links);
+console.log('===')
+$imgs.forEach((item, index) => {
+  console.log(index, item);
+});
 
-// Selecione o primeiro h2 dentro de .animais-descricao
-const $h2 = document.querySelector('.animais-descricao h2')
-console.log($h2.innerText);
-console.log('===');
+// jeito resumido
+console.log('===')
+$imgs.forEach((item, index) => console.log(index, item));
 
-// Selecione o último p do site
-const $lastP = document.querySelectorAll('p');
-$lastP.forEach(function(item, index){
-  if($lastP.length - 1 === index){
-    console.log(item.innerText)
-  }
-})
+// Mostre no console cada parágrado do site
+const $p = document.querySelectorAll('p');
+$p.forEach((item, index) => console.log(index, item));
 
+// Mostre o texto dos parágrafos no console
+$p.forEach((item, index) => console.log(index, item.innerText));
+
+// Como corrigir os erros abaixo:
+$imgs.forEach((item, index) => {
+  console.log(item, index);
+});
+
+console.log('===')
+let i = 0;
+$imgs.forEach(() => {
+  console.log(i++)
+});
+
+console.log('===')
+$imgs.forEach(() => i++);

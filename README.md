@@ -74,3 +74,28 @@ Document Object Model
 ### Node
 
 Toda tag html é representada pelo objeto `Element` e por isso herda os seus métodos e propriedades. Element é um tipo de objeto Node.
+
+### forEach
+
+Constantemente vamos selecionar uma lista de itens do dom. A melhor forma para interagirmos com os mesmos é utilizando o método forEach.
+
+````js
+const imgs = document.querySelectorAll('img');
+
+imgs.forEach(function(item){
+  console.log(item);
+});
+```
+````
+
+### Arrow Function
+
+Sintaxe curta em relação a `function expression`. Basta remover a palavra chave function e adicionar a fat arrow `=>` após os argumentos.
+
+````js
+const imgs = document.querySelectorAll('img');
+
+imgs.forEach((item) => {
+  console.log(item);
+});```
+````
