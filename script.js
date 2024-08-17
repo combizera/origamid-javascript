@@ -1,53 +1,30 @@
-const $menu = document.querySelector('.menu');
-const $animals = document.querySelector('.animais');
+const $listAnimals = document.querySelector('.animais-lista');
 
-$menu.classList.add('ativo');
+console.log($listAnimals.scrollHeight);
 
-console.log($menu.classList, $animals.attributes);
+const animalsTop = $listAnimals.offsetTop;
 
-const $img = document.querySelector('img');
+console.log(animalsTop);
 
-console.log($img.getAttribute('alt'));
-$imgWithAlt = $img.setAttribute('alt', 'gatooo')
-console.log($img.getAttribute('alt'));
+const $h2 = document.querySelector('h2');
 
-// Adicione a classe ativo a todos os itens do menu
-const $menuItem = $menu.querySelectorAll('li');
+const rect = $h2.getBoundingClientRect();
 
-$menuItem.forEach(function(item, index){
-  item.classList.add('ativo');
-  console.log(index, item);
-});
-console.log('===')
+console.log(rect);
 
-// Remove a classe ativo de todos os itens do menu e mantenha apenas no primeiro
-$menuItem.forEach(function(item, index){
-  item.classList.remove('ativo');
-  console.log(index, item);
-  if(index == 0){
-    console.log(item.innerText)
-    item.classList.add('ativo')
-  }
-});
+console.log(
+  window.innerWidth,
+  window.outerWidth,
+  window.scrollX,
+  window.scrollY,
+);
 
-// Verifique se as imagens possuem o atributo alt
-const $imgs = document.querySelectorAll('img');
-$imgs.forEach(function(item, index){
-  alt = item.hasAttribute('alt')
-  if(alt){
-    console.log(item, alt);
-  } else {
-    console.log(index, item, 'Não tem alt');
-  }
-});
+const small = window.matchMedia('(max-width: 600px)').matches;
 
-// Modifique o href do link externo no menu
-$menuItem.forEach(function(item, index){
-  console.log(index, item)
-  $linkExterno = item.querySelector('[href^="https://"]')
-  if($linkExterno){
-    $linkExterno.setAttribute('href', 'https://combizera.com')
-    console.log($linkExterno)
-  }
-});
+if(small) {
+  console.log('Usuário mobile');
+} else {
+  console.log('Desktop')
+}
 
+console.log(small);
